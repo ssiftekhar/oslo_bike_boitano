@@ -27,7 +27,7 @@ Løsningen er laget bruk av datanalytikere til å bygge innsikt for interessente
 \
 **Her er en enkel datamodell som viser Oslo Bike-dataen, og dens relasjoner:**
 
-<img width="615" height="686" alt="datamodell oslo bike" src="https://github.com/user-attachments/assets/c1e5753f-45b6-4e95-ab54-f518e2b60b1e" />
+<img width="615" height="686" alt="datamodell oslo bike" src="https://github.com/user-attachments/assets/9406f267-a3e4-487e-ba2a-4b6bc5ff37f7" />
 
 
 \
