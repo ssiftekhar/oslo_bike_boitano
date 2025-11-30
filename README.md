@@ -50,10 +50,10 @@ cd oslo-bike-pipeline`
 \
 **Designvalg**
 
-SQLite: Vurderte først mySQL, men kom på hvor herk det kan være å finne gratis hosting. Også egner SQLite veldig til liknende cas-oppgaver som ikke krever noe store mengder lagring, og kan kjøres av alle med python installert. 
-ETL-struktur: Pørvde å ha en tydelig ETL struktur gjennom koden. Letter å teste og debugge
-Historikk: La til en ekstra nøkkel på station_status for å få en historikk som gjøre det lettere å bygge en god measure
-last_updated: valgt å legge til denne som en kolonne og merker hver rad med når den ble oppdatert
+SQLite: Vurderte først mySQL, men kom på hvor herk det kan være å finne gratis hosting. Også egner SQLite veldig til liknende cas-oppgaver som ikke krever noe store mengder lagring, og kan kjøres av alle med python installert.\
+ETL-struktur: Pørvde å ha en tydelig ETL struktur gjennom koden. Letter å teste og debugge\
+Historikk: La til en ekstra nøkkel på station_status for å få en historikk som gjøre det lettere å bygge en god measure\
+last_updated: valgt å legge til denne som en kolonne og merker hver rad med når den ble oppdatert\
 
 \
 **Videre forbedringer**
