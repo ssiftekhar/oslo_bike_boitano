@@ -38,11 +38,13 @@ Løsningen er laget bruk av datanalytikere til å bygge innsikt for interessente
 `git clone (https://github.com/ssiftekhar/oslo_bike_boitano)
 cd oslo-bike-pipeline`
 
-2. Installer pakker og reqs
+2. Opprett virtual environment i ditt OS
+
+3. Installer pakker og reqs
 
 `pip install -r requirements.txt`
 
-3. Kjør scriptet oslo_bike_etl
+4. Kjør scriptet oslo_bike_etl
 
 `python oslo_bike_etl.py`
 
