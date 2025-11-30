@@ -48,6 +48,25 @@ cd oslo-bike-pipeline`
 
 `python oslo_bike_etl.py`
 
+**Se på dataen i oslo_bike.db**
+
+Her er det noen alternativer:
+
+1. Legg til extension "SQlite Viewer" i VSCode (denne jeg brukte)\
+2. Last ned en GUI for SQLite eller noe som kan brukes med flere database-dialekter\
+3. Legg til en ny python-fil med kodesnutten under, og kjøre som SQL kode (og gjør nødvendige endringer):\ 
+
+```
+import sqlite3
+import pandas as pd
+
+conn = sqlite3.connect("oslo_bike.db")
+
+df = pd.read_sql("SELECT * FROM station_status LIMIT 10;", conn)
+print(df)
+
+conn.close()
+```
 
 \
 **Designvalg**
