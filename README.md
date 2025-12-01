@@ -1,7 +1,7 @@
 # oslo_bike_boitano
 ETL pipeline for Oslo Bike data om stasjoner og salg av pass
 
-Denne applikasjonen henter data fra et mock-API for Oslo Bysykkel, transformerer datasettene til rene pandas‐dataframes og lagrer dem i en SQLite-relasjonsdatabase.
+Denne scriptet henter data fra et mock-API for Oslo Bysykkel, transformerer datasettene til rene pandas‐dataframes og lagrer dem i en lokal SQLite-relasjonsdatabase.
 Løsningen er laget bruk av datanalytikere til å bygge innsikt for interessenter
 
 **Prosjektet består av en enkel ETL-prosess:**
@@ -71,7 +71,7 @@ conn.close()
 \
 **Designvalg**
 
-SQLite: Vurderte først mySQL, men kom på hvor herk det kan være å finne gratis hosting. Også egner SQLite veldig til liknende cas-oppgaver som ikke krever noe store mengder lagring, og kan kjøres av alle med python installert.\
+SQLite: Vurderte først mySQL, men kom på hvor herk det kan være å finne enkel hosting. Også egner SQLite veldig til liknende case-oppgaver som ikke krever noe store mengder lagring, og kan kjøres av alle med python installert. Ulempen er naturligvis at det kun blir en enkel db-fil på en felles fillokasjon\
 ETL-struktur: Pørvde å ha en tydelig ETL struktur gjennom koden. Letter å teste og debugge\
 Historikk: La til en ekstra nøkkel på station_status for å få en historikk som gjøre det lettere å bygge en god measure\
 last_updated: valgt å legge til denne som en kolonne og merker hver rad med når den ble oppdatert\
