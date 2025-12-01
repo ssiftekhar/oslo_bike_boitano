@@ -99,9 +99,9 @@ def lag_tabeller(cursor):
     );
     """
 
-    for name, ddl in tabeller.items():
+    for navn, ddl in tabeller.items():
         try:
-            print(f"Lager tabell: {name}")
+            print(f"Lager tabell: {navn}")
             cursor.execute(ddl)
         except Exception as feil:
             print(f"En feil dukket opp: {feil}")
@@ -164,17 +164,17 @@ def beregn_bruk_bevegelse(cursor):
     """
 
     cursor.execute(sql)
-    rows = cursor.fetchall()
+    rader = cursor.fetchall()
 
-    if not rows:
+    if not rader:
         print(" Ingen bevegelsesdata enda (trenger minst to kjøringer).")
         return
 
     print("\n Topp 10 stasjoner målt i total bevegelse (inn/ut av sykler):")
-    for station_id, total in rows[:10]:
+    for station_id, total in rader[:10]:
         print(f"  - Stasjon {station_id}: {total} bevegelser")
 
-    return rows
+    return rader
 
     
 def main():
